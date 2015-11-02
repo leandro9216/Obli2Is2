@@ -186,7 +186,9 @@
                                                       <Component id="txtAñoIni" min="-2" pref="46" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
-                                              <EmptySpace min="0" pref="150" max="32767" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                           </Group>
                                           <Component id="jScrollPane2" alignment="1" pref="282" max="32767" attributes="1"/>
                                           <Component id="txtNombre" alignment="0" pref="282" max="32767" attributes="1"/>
@@ -236,12 +238,15 @@
                               <Component id="etqFechaFin" min="-2" max="-2" attributes="1"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtMesIni" alignment="3" min="-2" pref="30" max="-2" attributes="1"/>
-                                  <Component id="txtDiaIni" alignment="3" min="-2" pref="30" max="-2" attributes="1"/>
-                                  <Component id="txtAñoIni" alignment="3" min="-2" pref="30" max="-2" attributes="1"/>
-                                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtMesIni" alignment="3" min="-2" pref="30" max="-2" attributes="1"/>
+                                      <Component id="txtDiaIni" alignment="3" min="-2" pref="30" max="-2" attributes="1"/>
+                                      <Component id="txtAñoIni" alignment="3" min="-2" pref="30" max="-2" attributes="1"/>
+                                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -537,6 +542,8 @@
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="txtNombre.addFocusListener(new java.awt.event.FocusAdapter() {&#xa;    public void focusGained(java.awt.event.FocusEvent evt) {&#xa;        txtNombre.setBorder(new LineBorder(new Color(77,144,254)));&#xa;    }&#xa;    public void focusLost(java.awt.event.FocusEvent evt) {&#xa;        txtNombre.setBorder(new LineBorder(new Color(217,217,217)));&#xa;    }&#xa;});&#xa;txtNombre.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;&#xa;&#x9;    public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;&#x9;&#x9;if (!txtNombre.isFocusOwner()) {&#xa;&#x9;&#x9;    txtNombre.setBorder(new LineBorder(new Color(185, 185, 185)));&#xa;&#x9;&#x9;}&#xa;&#x9;    }&#xa;&#xa;&#x9;    public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;&#x9;&#x9;if (!txtNombre.isFocusOwner()) {&#xa;&#x9;&#x9;    txtNombre.setBorder(new LineBorder(new Color(217, 217, 217)));&#xa;&#x9;&#x9;}&#xa;&#x9;    }&#xa;&#x9;});"/>
               </AuxValues>
+            </Component>
+            <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
             </Component>
           </SubComponents>
         </Container>
